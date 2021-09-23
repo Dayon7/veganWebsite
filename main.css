@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+ /* Navbar section*/
+.navbar {
+    background-color: black !important;
+}
+
+
+.nav-item {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* Hero section*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/still-life-2338821_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: rgb(0, 88, 0);
+    color: white;
+    border: 1px solid yellowgreen;
+    margin-top: 5rem;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+    padding: 0.9375rem 1.875rem;
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.hero-button:focus,
+.hero-button:active,
+.hero-button-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.hero-button:hover {
+    background-color: rgb(2, 124, 2);
+    border: 1px solid yellowgreen
+}
+
+
+/* cards section*/
+
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+     /*
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    */
+    background-color: rgba(128, 128, 128, 0.185);
+    padding: 25px 0px;
+
+   
+    
+}
+
+.card {
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    border-top-left-radius:55px;
+    border-top-right-radius:55px;
+    border-bottom-right-radius:55px;
+    border-bottom-left-radius:55px;
+    overflow: hidden;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn {
+    
+    align-items: center;
+    justify-content: center;
+    
+    display: inline-block;
+    text-align: center;
+    
+        background-color: rgb(0, 88, 0);
+        color: white;
+        border: 1px solid yellowgreen;
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:25px;
+        border-bottom-left-radius:25px;
+        padding: 0.9375rem 1.875rem;
+        font-family: "Monserrat", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 200;
+        cursor: pointer;
+    }
+.btn:hover{
+    background-color: rgb(2, 124, 2);
+    border: 1px solid yellowgreen
+}
+
+@media(max-width: 960px) {
+    .cards-container {
+      flex-direction: column;
+      margin: auto;
+      
+    }
+    .card {
+        width: 30rem !important;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+  }
+
+  /* offers */
+
+ .offers-container {
+     position: relative;
+     align-items: center;
+     text-align: center;
+     display: flex;
+     width: 100%;
+     font-weight: 600;
+     background-image: url(images/veggietrans4.png);
+     background-size: cover;
+     background-position: center;
+     
+     
+ }
+
+ .text-sub {
+     
+     color: black;
+     margin-top: 4em;
+     margin-left: 6em;
+     margin-right: 6em;
+     margin-bottom: 4em;
+     font-style: bold;
+ }
+
+ p.subscription-description{
+    font-size: 1.3rem;
+    font-weight: 500;
+ }
